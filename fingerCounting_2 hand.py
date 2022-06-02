@@ -3,8 +3,8 @@ from cv2 import VideoCapture
 import mediapipe as mp 
 import time
 
-class handLandmarkDetector():
-    def __init__(self,image_mode=False,max_hands=2,modelComplexity=1,min_detection_confidence=0.8,min_tracking_confidence=0.5):
+class handLandmarkDetector(): #inisialisasi class handLandmarkDetector
+    def __init__(self,image_mode=False,max_hands=2,modelComplexity=1,min_detection_confidence=0.8,min_tracking_confidence=0.5): #fungsi untuk menginisialisasikan semua object pada class handLandmarkDetector
         self.image_mode = image_mode
         self.max_hands=max_hands
         self.min_detection_confidence=min_detection_confidence
@@ -99,7 +99,7 @@ class handLandmarkDetector():
 def main():
     
     # Using web cam
-    capture = cv.VideoCapture(0)
+    capture = cv.VideoCapture(0) # program memanggil kamera untuk ditampilkan
     
     current_time =0
     previous_time= 0
