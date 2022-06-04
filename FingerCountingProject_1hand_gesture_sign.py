@@ -43,6 +43,6 @@ while True: #kondisi perulangan
             fingers2 = detector.fingersUp(hand2) #inisialisasi variabel fingers2 
          
 
-    cv2.imshow("Image", img)
+    cv2.imshow("Image", img) #untuk menampilkan gambar
     cv2.waitKey(1)
     
