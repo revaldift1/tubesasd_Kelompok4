@@ -37,7 +37,7 @@ while True:
 
 
 
-
+        #hands2
         if len(hands) == 2:
             hand2 = hands[1]
             fingers2 = detector.fingersUp(hand2)
